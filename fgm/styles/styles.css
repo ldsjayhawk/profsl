@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Markazi+Text&display=swap');
+
+:root {
+    --heading-font: Markazi Text, sans-serif;
+    --paragraph-font: Figtree, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+header, footer, .grid {
+    margin: 0 auto;
+}
+
+h1 {
+    color: #5a8b39;
+    border-bottom-style: solid;
+    border-color: #004687;
+    border-width: 2px;
+    font-family: var(--heading-font);
+}
+
+nav {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color:white;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:rgba(243, 255, 186, 0.81);
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 25px;
+}
+
+nav a:visited {
+    color:white;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #004687;
+    padding: 2px;
+    box-shadow: 0 0 50px gray;
+}
+
+aside {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px;
+    text-align: center;
+    position: relative;
+    background-color: #bbdeff;
+    order: -1;
+}
+
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    color: #ffffff;
+    font-family: var(--heading-font);
+}
+
+aside img{
+    width: 200px;
+    height: auto;
+}
+
+p{
+    padding: 10px;
+}
+
+footer{
+    margin-top: 50px;
+    border-top: 1px dashed #e1ebf5;
+    text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 10px;
+    padding: 10px;
+    border: 1px;
+    padding: 1rem;
+    background-color: rgb(213, 247, 208);
+}
+
+.box a {
+    color: #004687;
+    padding: 10px;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: white;
+}
